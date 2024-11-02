@@ -1,24 +1,29 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import img from "./assets/img.png";
-import "./App.css";
+
+import img from "/img.png";
+
+import { TranslationProvider, useTranslation } from "./TranslationContext";
+
+import Navigation from "./Navigation";
 import AboutMe from "./AboutMe";
 import Education from "./Education";
 import WorkExperience from "./WorkExperience";
+
+import { ReactTyped } from "react-typed";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCakeCandles,
   faEarthEurope,
-  faFlag,
-  faHouse,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { TranslationProvider, useTranslation } from "./TranslationContext";
-import Navigation from "./Navigation";
-import { ReactTyped } from "react-typed";
+
+import reactLogo from "/react.svg";
+import viteLogo from "/vite.svg";
+import tailwindLogo from "/tailwind.svg";
+import vercelLogo from "/vercel.svg";
 
 type Skill = {
   name: string;
@@ -27,8 +32,6 @@ type Skill = {
 
 function AppContent() {
   const { t } = useTranslation();
-
-  const [count, setCount] = useState(0);
   const [color, setColor] = useState("#00ffff");
 
   useEffect(() => {
@@ -143,28 +146,23 @@ function AppContent() {
                   typeSpeed={100}
                   backSpeed={50}
                   loop
-                  className="text-[32px] text-mainColor inline"
+                  className="text-[24px] text-mainColor inline"
                 />
               </span>
             </div>
           </div>
         </div>
         <div className="lg:flex mt-10">
-          <div className="lg:w-1/3 items-center flex flex-col">
-            <p className="pt-4">
-              <FontAwesomeIcon icon={faEarthEurope} /> {t.location}
-            </p>
-            <p className="pt-2">
-              <FontAwesomeIcon icon={faCakeCandles} /> 15. Oktober 1999 (25
-              Years old)
-            </p>
-            <p className="pt-2">
-              <FontAwesomeIcon icon={faFlag} /> Staatsbürgerschaft: Österreich
-            </p>
-            <p className="pt-2">
-              <FontAwesomeIcon icon={faHouse} /> Born in Wolfsberg, Carinthia
-              Austria
-            </p>
+          <div className="lg:w-1/3 items-center flex flex-col ">
+            <div>
+              <p className="pt-4">
+                <FontAwesomeIcon icon={faEarthEurope} /> {t.location}
+              </p>
+              <p className="pt-6">{t.bornIn}</p>
+              <p className="pt-2">
+                <FontAwesomeIcon icon={faCakeCandles} /> {t.birthday}
+              </p>
+            </div>
 
             <div className="mt-20 flex justify-around flex-col md:flex-row">
               <a
@@ -237,28 +235,34 @@ function AppContent() {
             <WorkExperience />
           </div>
         </div>
-
-        <div>
+      </div>
+      <footer className="border-t mt-20 flex flex-col justify-center items-center border-mainColor">
+        <p className="mt-10">
+          This page was created with Vite + React + TailwindCSS + Vercel
+        </p>
+        <div className="flex my-4">
           <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
+            <img src={viteLogo} alt="Vite logo" className="logo vite" />
           </a>
           <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
+            <img src={reactLogo} alt="React logo" className="logo react" />
+          </a>
+          <a href="https://tailwind.css" target="_blank">
+            <img
+              src={tailwindLogo}
+              alt="Tailwind logo"
+              className="logo tailwind"
+            />
+          </a>
+          <a href="https://vercel.app" target="_blank">
+            <img src={vercelLogo} alt="Vercel logo" className="logo vercel" />
           </a>
         </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
+        <p className="mb-10">
+          Copyright © {new Date().getFullYear()} Dominik Kainz
         </p>
-      </div>
+      </footer>
+      <h1></h1>
     </>
   );
 }

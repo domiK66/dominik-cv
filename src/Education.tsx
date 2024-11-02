@@ -9,6 +9,7 @@ import {
   faGolang,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default function Education() {
   const { t } = useTranslation();
@@ -17,10 +18,16 @@ export default function Education() {
       <h1 className="text-[40px] font-semibold mb-4">{t.education}</h1>
       <div className="mt-8 w-full">
         <p className="text-[24px] font-semibold mt-8">FH Joanneum</p>
+        <p className="underline">
+          <FontAwesomeIcon icon={faLink} />{" "}
+          <a href="https://www.fh-joanneum.at" target="_blank" rel="noreferrer">
+            fh-joanneum.at
+          </a>
+        </p>
         <p className="text-mainColor">Alte Poststraße 149, 8020 Graz</p>
         <div className="flex justify-between mt-8">
           <p className="text-[20px]">Diplom Ingenieur (Dipl.-Ing.)</p>
-          <p className="text-[20px] text-mainColor">
+          <p className="text-[20px] text-mainColor text-right">
             {t.oct} 2022 - {t.oct} 2024
           </p>
         </div>
@@ -57,9 +64,6 @@ export default function Education() {
             <FontAwesomeIcon icon={faGitlab} /> GitLab
           </span>
           <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
-            Entrepreneurship
-          </span>
-          <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
             Parallel Programming
           </span>
           <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
@@ -70,7 +74,9 @@ export default function Education() {
           <p className="text-[20px]">
             Bachelor of Science in Engineering (BSc.)
           </p>
-          <p className="text-[20px] text-mainColor">Sep 2019 - Jul 2022</p>
+          <p className="text-[20px] text-mainColor text-right">
+            Sep 2019 - Jul 2022
+          </p>
         </div>
         <p className="text-mainColor">{t.study}: Informationsmanagement</p>
 
@@ -108,30 +114,56 @@ export default function Education() {
           <p className="text-[24px] font-semibold mt-8">
             BRG/BORG Wolfsberg (AHS)
           </p>
+          <p className="underline">
+            <FontAwesomeIcon icon={faLink} />{" "}
+            <a
+              href="https://www.borg-wolfsberg.at"
+              target="_blank"
+              rel="noreferrer"
+            >
+              borg-wolfsberg.at
+            </a>
+          </p>
 
-          <p className="text-mainColor">Gartenstraße 1, 9400 Wolfsberg</p>
+          <p className="text-mainColor">Gartenstraße 1, 9400 Wolfsberg A</p>
 
           <div className="flex justify-between mt-8">
             <p className="text-[20px]">{t.upperGrade}</p>
-            <p className="text-[20px] text-mainColor">Sep 2014 - Jul 2018</p>
+            <p className="text-[20px] text-mainColor text-right">
+              Sep 2014 - Jul 2018
+            </p>
           </div>
           <p className="text-mainColor">{t.focus}: Bildnerisches Gestalten</p>
 
           <div className="flex justify-between mt-4">
             <p className="text-[20px]">{t.lowerGrade}</p>
-            <p className="text-[20px] text-mainColor">Sep 2010 - Jul 2014</p>
+            <p className="text-[20px] text-mainColor text-right">
+              Sep 2010 - Jul 2014
+            </p>
           </div>
         </div>
         <div className="mt-8 w-full">
           <hr></hr>
           <p className="text-[24px] font-semibold mt-8">VS1 Wolfsberg</p>
+          <p className="underline">
+            <FontAwesomeIcon icon={faLink} />{" "}
+            <a
+              href="https://vs-wolfsberg.ksn.at/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              vs-wolfsberg.ksn.at
+            </a>
+          </p>
           <p className="text-mainColor">
-            Hans-Scheiber-Straße 2, 9400 Wolfsberg
+            Hans-Scheiber-Straße 2, 9400 Wolfsberg A
           </p>
         </div>
         <div className="flex justify-between mt-8">
           <p className="text-[20px]">{t.elementarySchool}</p>
-          <p className="text-[20px] text-mainColor">Sep 2006 - Jul 2010</p>
+          <p className="text-[20px] text-mainColor text-right">
+            Sep 2006 - Jul 2010
+          </p>
         </div>
       </div>
     </section>
