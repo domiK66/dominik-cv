@@ -87,7 +87,7 @@ export default function WorkExperience() {
         <div className="flex justify-between mt-4">
           <p className="text-[20px]">Frontend Web Developer</p>
           <p className="text-[20px] text-mainColor text-right">
-            Jan 2019 - Mar 2022
+            Jan 2019 - {t.mar} 2022
           </p>
         </div>
         <div className="flex justify-between">
@@ -123,7 +123,7 @@ export default function WorkExperience() {
         <div className="flex justify-between mt-8">
           <p className="text-[20px]">Ecommerce Developer</p>
           <p className="text-[20px] text-mainColor text-right">
-            Jun 2018 - Dec 2018
+            Jun 2018 - {t.dec} 2018
           </p>
         </div>
         <div className="flex justify-between">
@@ -166,7 +166,7 @@ export default function WorkExperience() {
         <div className="flex justify-between mt-4">
           <p className="text-[20px]">Webdesigner</p>
           <p className="text-[20px] text-mainColor text-right">
-            Oct 2017 - May 2018
+            {t.oct} 2017 - {t.may} 2018
           </p>
         </div>
         <div className="flex justify-between">

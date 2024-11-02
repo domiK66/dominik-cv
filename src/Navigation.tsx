@@ -10,7 +10,7 @@ export default function Navigation() {
   const { t, language, setLanguage } = useTranslation();
 
   return (
-    <div className="w-full justify-center items-center flex">
+    <div className="w-full justify-center items-center flex hidden-for-pdf">
       <nav
         className="fixed border rounded-xl p-0.5 top-4 border-mainColor z-10 overflow-hidden"
         style={{
@@ -43,14 +43,7 @@ export default function Navigation() {
           backdropFilter: "blur(10px)",
         }}
       >
-        <button
-          onClick={() => setLanguage("en")}
-          className={`border border-transparent box-border p-1 hover:underline  ${
-            language === "en" ? "bg-mainColor text-black" : ""
-          }`}
-        >
-          EN
-        </button>
+        {" "}
         <button
           onClick={() => setLanguage("de")}
           className={`border border-transparent box-border p-1 hover:underline ${
@@ -58,6 +51,14 @@ export default function Navigation() {
           }`}
         >
           DE
+        </button>
+        <button
+          onClick={() => setLanguage("en")}
+          className={`border border-transparent box-border p-1 hover:underline  ${
+            language === "en" ? "bg-mainColor text-black" : ""
+          }`}
+        >
+          EN
         </button>
       </div>
       <div

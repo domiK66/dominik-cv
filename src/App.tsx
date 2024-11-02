@@ -36,7 +36,8 @@ function AppContent() {
       "--mainColor-rgb",
       `${rgb.r}, ${rgb.g}, ${rgb.b}`
     );
-    console.log(color);
+    // jump to top of page
+    window.scrollTo(0, 0);
   }, [color]);
 
   function hexToRgb(hex: string) {
@@ -57,10 +58,10 @@ function AppContent() {
   ];
 
   return (
-    <>
+    <div id="capture">
       <Navigation />
       <div
-        className="flex fixed border right-4 rounded-xl backdrop-blur bottom-4 z-10 overflow-hidden"
+        className="flex fixed border right-4 rounded-xl backdrop-blur bottom-4 z-10 overflow-hidden hidden-for-pdf"
         style={{
           backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
           borderColor: "var(--mainColor)",
@@ -192,6 +193,9 @@ function AppContent() {
               >
                 <FontAwesomeIcon icon={faEnvelope} /> Email
               </a>
+              <button
+                className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
+              >Download PDF</button>
             </div>
           </div>
           <div className="lg:w-2/3 items-center justify-center lg:pt-0">
@@ -231,7 +235,7 @@ function AppContent() {
           </div>
         </div>
       </div>
-      <footer className="border-t mt-20 flex flex-col justify-center items-center border-mainColor">
+      <footer className="border-t mt-20 flex flex-col justify-center items-center border-mainColor hidden-for-pdf">
         <p className="mt-10">
           This page was created with Vite + React + TailwindCSS + Vercel
         </p>
@@ -239,7 +243,7 @@ function AppContent() {
           Copyright © {new Date().getFullYear()} Dominik Kainz
         </p>
       </footer>
-    </>
+    </div>
   );
 }
 
