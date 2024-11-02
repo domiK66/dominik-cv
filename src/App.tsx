@@ -20,11 +20,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import reactLogo from "/react.svg";
-import viteLogo from "/vite.svg";
-import tailwindLogo from "/tailwind.svg";
-import vercelLogo from "/vercel.svg";
-
 type Skill = {
   name: string;
   value: number;
@@ -240,29 +235,10 @@ function AppContent() {
         <p className="mt-10">
           This page was created with Vite + React + TailwindCSS + Vercel
         </p>
-        <div className="flex my-4">
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} alt="Vite logo" className="logo vite" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} alt="React logo" className="logo react" />
-          </a>
-          <a href="https://tailwind.css" target="_blank">
-            <img
-              src={tailwindLogo}
-              alt="Tailwind logo"
-              className="logo tailwind"
-            />
-          </a>
-          <a href="https://vercel.app" target="_blank">
-            <img src={vercelLogo} alt="Vercel logo" className="logo vercel" />
-          </a>
-        </div>
         <p className="mb-10">
           Copyright © {new Date().getFullYear()} Dominik Kainz
         </p>
       </footer>
-      <h1></h1>
     </>
   );
 }
