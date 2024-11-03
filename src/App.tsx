@@ -179,7 +179,7 @@ function AppContent() {
               }}
               href="/CV.pdf"
               download="Dominik-Kainz-Lebenlauf.pdf"
-              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline mt-10"
+              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline mt-28"
             >
               <FontAwesomeIcon icon={faDownload} /> {t.download}
             </a>
