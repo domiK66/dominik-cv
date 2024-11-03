@@ -16,9 +16,17 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Internship</p>
-          <p>Graz, Styria (On-Site)</p>
+          <p className="text-mainColor">
+            {t.ferialpraktikum} • {t.fulltime}
+          </p>
+          <p>
+            {t.graz} ({t.onsite})
+          </p>
         </div>
+        <ul className="list-disc list-inside mt-2 list-mainColor">
+          <li>{t.job11}</li>
+          <li>{t.job12}</li>
+        </ul>
         <div className="flex flex-wrap mt-4">
           <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
             C#
@@ -50,9 +58,17 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Internship</p>
-          <p>Graz, Styria (On-Site)</p>
+          <p className="text-mainColor">
+            FH-{t.internship} • {t.fulltime}
+          </p>
+          <p>
+            {t.graz} ({t.onsite})
+          </p>
         </div>
+        <ul className="list-disc list-inside mt-2 list-mainColor">
+          <li>{t.job21}</li>
+          <li>{t.job22}</li>
+        </ul>
         <div className="flex flex-wrap mt-4">
           <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
             Linux Server
@@ -91,19 +107,12 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Part-time</p>
-          <p>Wolfsberg, Carinthia (Remote)</p>
+          <p className="text-mainColor">{t.parttime}</p>
+          <p>{t.wolfsberg} (Remote)</p>
         </div>
         <ul className="list-disc list-inside mt-2 list-mainColor">
-          <li>
-            Developed and maintained the frontend of the company's website
-          </li>
-          <li>
-            Implemented new features and optimized the website for performance
-          </li>
-          <li>
-            Worked closely with the backend team to integrate new features
-          </li>
+          <li>{t.job31}</li>
+          <li>{t.job32}</li>
         </ul>
         <div className="flex flex-wrap mt-4">
           <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
@@ -127,18 +136,14 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Full-time</p>
-          <p>Wolfsberg, Carinthia (On-Site)</p>
+          <p className="text-mainColor">{t.fulltime}</p>
+          <p>
+            {t.wolfsberg} ({t.onsite})
+          </p>
         </div>
         <ul className="list-disc list-inside mt-2 list-mainColor">
-          <li>
-            Developed a new eCommerce platform by migrating and enriching data
-            from the outdated system, which lacked essential features
-          </li>
-          <li>
-            Created and managed product listings with detailed descriptions,
-            pricing, categories, and attributes
-          </li>
+          <li>{t.job41}</li>
+          <li>{t.job42}</li>
         </ul>
 
         <div className="flex flex-wrap mt-4">
@@ -170,19 +175,12 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Part-time</p>
-          <p>Wolfsberg, Carinthia (Remote)</p>
+          <p className="text-mainColor">{t.parttime}</p>
+          <p>{t.wolfsberg} (Remote)</p>
         </div>
         <ul className="list-disc list-inside mt-2 list-mainColor">
-          <li>
-            Developed and maintained the frontend of the company's website
-          </li>
-          <li>
-            Implemented new features and optimized the website for performance
-          </li>
-          <li>
-            Worked closely with the backend team to integrate new features
-          </li>
+          <li>{t.job51}</li>
+          <li>{t.job52}</li>
         </ul>
         <div className="flex flex-wrap mt-4">
           <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
@@ -215,8 +213,12 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Internship</p>
-          <p>Wolfsberg, Carinthia (On-Site)</p>
+          <p className="text-mainColor">
+            {t.ferialpraktikum} • {t.fulltime}
+          </p>
+          <p>
+            {t.wolfsberg} ({t.onsite})
+          </p>
         </div>
       </div>
       <div className="mt-8 w-full">
@@ -237,8 +239,12 @@ export default function WorkExperience() {
           </p>
         </div>
         <div className="flex justify-between">
-          <p className="text-mainColor">Internship</p>
-          <p>Wolfsberg, Carinthia (On-Site)</p>
+          <p className="text-mainColor">
+            {t.ferialpraktikum} • {t.fulltime}
+          </p>
+          <p>
+            {t.wolfsberg} ({t.onsite})
+          </p>
         </div>
       </div>
     </section>

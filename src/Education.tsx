@@ -133,8 +133,6 @@ export default function Education() {
               Sep 2014 - Jul 2018
             </p>
           </div>
-          <p className="text-mainColor">{t.focus}: Bildnerisches Gestalten</p>
-
           <div className="flex justify-between mt-4">
             <p className="text-[20px]">{t.lowerGrade}</p>
             <p className="text-[20px] text-mainColor text-right">

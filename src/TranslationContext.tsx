@@ -1,4 +1,10 @@
-import { ReactNode, createContext, useState, useContext, useEffect } from "react";
+import {
+  ReactNode,
+  createContext,
+  useState,
+  useContext,
+  useEffect,
+} from "react";
 import translations from "./translations.json";
 
 const TranslationContext = createContext({
@@ -6,7 +12,6 @@ const TranslationContext = createContext({
   language: "en",
   setLanguage: {} as (language: "en" | "de") => void,
 });
-
 
 export const TranslationProvider = ({ children }: { children: ReactNode }) => {
   type Language = "en" | "de";
@@ -26,4 +31,3 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export const useTranslation = () => useContext(TranslationContext);
-

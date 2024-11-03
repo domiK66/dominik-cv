@@ -14,11 +14,13 @@ import { ReactTyped } from "react-typed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCakeCandles,
+  faDownload,
   faEarthEurope,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faAngular } from "@fortawesome/free-brands-svg-icons/faAngular";
 
 type Skill = {
   name: string;
@@ -48,13 +50,25 @@ function AppContent() {
     return { r, g, b };
   }
 
+  function downloadCV() {
+    // download CV
+  }
+
   const skills: Skill[] = [
-    { name: "Communication", value: 70 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Collaboration", value: 85 },
-    { name: "Creativity", value: 85 },
-    { name: "Patience", value: 70 },
-    { name: "Adaptability", value: 60 },
+    { name: t.creativity, value: 85 },
+    { name: t.problemSolving, value: 80 },
+    { name: t.patience, value: 80 },
+    { name: t.collaboration, value: 75 },
+    { name: t.communication, value: 75 },
+    { name: t.adaptability, value: 70 },
+  ];
+
+  const programmiersprachen: Skill[] = [
+    { name: "TypeScript", value: 90 },
+    { name: "Python", value: 85 },
+    { name: "C#", value: 80 },
+    { name: "Golang", value: 75 },
+    { name: "Kotlin", value: 65 },
   ];
 
   return (
@@ -193,24 +207,33 @@ function AppContent() {
               >
                 <FontAwesomeIcon icon={faEnvelope} /> Email
               </a>
-              <button
-                className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
-              >Download PDF</button>
             </div>
+            <a
+              style={{
+                backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
+                backdropFilter: "blur(10px)",
+              }}
+              href="/CV.pdf"
+              download="Dominik-Kainz-CV.pdf"
+              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
+            >
+              <FontAwesomeIcon icon={faDownload} /> {t.download}
+            </a>
           </div>
           <div className="lg:w-2/3 items-center justify-center lg:pt-0">
             <AboutMe />
           </div>
         </div>
         <div className="lg:flex flex-col-reverse flex lg:flex-row">
-          <div className="lg:w-1/3 pt-32 flex flex-col items-center">
+          <div className="lg:w-1/3 pt-32 flex flex-col lg:ml-20">
+            <h1 className="text-[40px] font-semibold">{t.skills}</h1>
             <p className="text-[24px] font-semibold pt-8">{t.languages}</p>
             <ul className="list-disc list-inside mt-2 list-mainColor">
               <li>German (Native proficiency)</li>
               <li>English (Professional working proficiency)</li>
             </ul>
-            <p className="text-[24px] font-semibold pt-32">{t.skills}</p>
-            <div className="w-1/2 pt-4">
+            <p className="text-[24px] font-semibold pt-10">{t.softskills}</p>
+            <div className="lg:w-1/2 pt-4">
               {skills.map((skill: Skill, i: number) => (
                 <div key={i} className="mb-4">
                   <label className="block text-lg font-medium">
@@ -228,17 +251,67 @@ function AppContent() {
                 </div>
               ))}
             </div>
+            <p className="text-[24px] font-semibold pt-10">
+              {t.programmingLanguages}
+            </p>
+            <div className="lg:w-1/2 pt-4">
+              {programmiersprachen.map((skill: Skill, i: number) => (
+                <div key={i} className="mb-4">
+                  <label className="block text-lg font-medium">
+                    {skill.name}
+                  </label>
+                  <div className="flex">
+                    <meter
+                      value={skill.value}
+                      className="w-full"
+                      min="0"
+                      max="100"
+                    />
+                    <p className="ml-4">{skill.value}%</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-[24px] font-semibold pt-8">{t.frameworks}:</p>
+            <div className="flex flex-wrap mt-4">
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                <FontAwesomeIcon icon={faAngular} /> Angular
+              </span>
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                <FontAwesomeIcon icon={faReact} /> React
+              </span>
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                Ionic
+              </span>
+            </div>{" "}
+            <div className="flex flex-wrap mt-4">
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                .Net Core
+              </span>
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                Flask
+              </span>
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                Django
+              </span>
+              <span className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm">
+                SpringBoot
+              </span>
+            </div>
           </div>
+
           <div className="lg:w-2/3">
             <Education />
+          </div>
+        </div>
+        <div className="flex w-full justify-center items-center">
+          <div className="lg:w-2/3 flex flex-col lg:ml-20">
             <WorkExperience />
           </div>
         </div>
       </div>
       <footer className="border-t mt-20 flex flex-col justify-center items-center border-mainColor hidden-for-pdf">
-        <p className="mt-10">
-          This page was created with Vite + React + TailwindCSS + Vercel
-        </p>
+        <p className="mt-10">{t.thisPageWasCreated}</p>
         <p className="mb-10">
           Copyright © {new Date().getFullYear()} Dominik Kainz
         </p>
