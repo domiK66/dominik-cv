@@ -50,10 +50,6 @@ function AppContent() {
     return { r, g, b };
   }
 
-  function downloadCV() {
-    // download CV
-  }
-
   const skills: Skill[] = [
     { name: t.creativity, value: 85 },
     { name: t.problemSolving, value: 80 },
