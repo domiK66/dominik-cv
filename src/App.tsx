@@ -16,6 +16,7 @@ import {
   faCakeCandles,
   faDownload,
   faEarthEurope,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -162,9 +163,11 @@ function AppContent() {
           <div className="lg:w-1/3 items-center flex flex-col ">
             <div>
               <p className="pt-4">
-                <FontAwesomeIcon icon={faEarthEurope} /> {t.location}
+                <FontAwesomeIcon icon={faLocationDot} /> {t.location}
               </p>
-              <p className="pt-6">{t.bornIn}</p>
+              <p className="pt-6">
+                <FontAwesomeIcon icon={faEarthEurope} /> {t.bornIn}
+              </p>
               <p className="pt-2">
                 <FontAwesomeIcon icon={faCakeCandles} /> {t.birthday}
               </p>
