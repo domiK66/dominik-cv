@@ -73,7 +73,7 @@ function AppContent() {
       <div
         className="flex fixed border right-4 rounded-xl backdrop-blur bottom-4 z-10 overflow-hidden hidden-for-pdf"
         style={{
-          backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
+          backgroundColor: "rgba(var(--mainColor-rgb), 0.40)",
           borderColor: "var(--mainColor)",
         }}
       >
@@ -169,51 +169,48 @@ function AppContent() {
                 <FontAwesomeIcon icon={faCakeCandles} /> {t.birthday}
               </p>
             </div>
-
-            <div className="mt-20 flex justify-around flex-col md:flex-row">
-              <a
-                href="https://www.linkedin.com/in/your-linkedin-profile"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
-                  backdropFilter: "blur(10px)",
-                }}
-                className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
-              >
-                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-              </a>
-              <a
-                style={{
-                  backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
-                  backdropFilter: "blur(10px)",
-                }}
-                href="mailto:your-email@example.com"
-                className="text-white px-4 py-2 rounded-full  border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
-              >
-                <FontAwesomeIcon icon={faGithub} /> GitHub
-              </a>
-              <a
-                style={{
-                  backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
-                  backdropFilter: "blur(10px)",
-                }}
-                href="mailto:your-email@example.com"
-                className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
-              >
-                <FontAwesomeIcon icon={faEnvelope} /> Email
-              </a>
-            </div>
             <a
               style={{
                 backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
                 backdropFilter: "blur(10px)",
               }}
               href="/CV.pdf"
-              download="Dominik-Kainz-CV.pdf"
-              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
+              download="Dominik-Kainz-Lebenlauf.pdf"
+              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline mt-10"
             >
               <FontAwesomeIcon icon={faDownload} /> {t.download}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dominik-kainz-0b85601a4/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
+                backdropFilter: "blur(10px)",
+              }}
+              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline "
+            >
+              <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+            </a>
+            <a
+              style={{
+                backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
+                backdropFilter: "blur(10px)",
+              }}
+              href="https://github.com/domiK66"
+              className="text-white px-4 py-2 rounded-full  border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
+            >
+              <FontAwesomeIcon icon={faGithub} /> GitHub
+            </a>
+            <a
+              style={{
+                backgroundColor: "rgba(var(--mainColor-rgb), 0.25)",
+                backdropFilter: "blur(10px)",
+              }}
+              href="mailto:kainz.domi@gmail.com"
+              className="text-white px-4 py-2 rounded-full border border-mainColor hover:bg-opacity-25 hover:border-white m-2 hover:underline"
+            >
+              <FontAwesomeIcon icon={faEnvelope} /> Email
             </a>
           </div>
           <div className="lg:w-2/3 items-center justify-center lg:pt-0">
