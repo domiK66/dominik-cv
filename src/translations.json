@@ -48,7 +48,7 @@
     "onsite": "On-Site",
     "wolfsberg": "Wolfsberg, Carinthia",
     "graz": "Graz, Styria",
-    "internship": "Praktikum",
+    "internship": "Internship",
     "ferialpraktikum": "Holiday Internship",
     "fulltime": "Full-Time",
     "parttime": "Part-Time",
@@ -70,8 +70,6 @@
     "projects": "Projekte",
     "location": "Graz, Steiermark, Österreich",
     "languages": "Sprachen",
-    "german": "Deutsch (Muttersprache)",
-    "english": "Englisch (Berufliche Kenntnisse)",
     "linkedIn": "LinkedIn",
     "email": "E-Mail",
     "github": "GitHub",
@@ -123,6 +121,8 @@
     "job32": "Neue Funktionen implementiert und die Website für eine bessere Leistung optimiert.",
     "job51": "Erstellung einer WordPress-Homepage zur repräsentativen Präsentation des Unternehmens.",
     "job52": "Weiterentwicklung des Produktsortiments im Onlineshop.",
-    "download": "Lebenslauf als PDF herunterladen"
+    "download": "Lebenslauf als PDF herunterladen",
+    "german": "Deutsch (Muttersprache)",
+    "english": "Englisch (professionelle Kompetenz)"
   }
 }

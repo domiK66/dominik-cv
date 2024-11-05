@@ -226,8 +226,8 @@ function AppContent() {
             <h1 className="text-[40px] font-semibold">{t.skills}</h1>
             <p className="text-[24px] font-semibold pt-8">{t.languages}</p>
             <ul className="list-disc list-inside mt-2 list-mainColor">
-              <li>German (Native proficiency)</li>
-              <li>English (Professional working proficiency)</li>
+              <li>{t.german}</li>
+              <li>{t.english}</li>
             </ul>
             <p className="text-[24px] font-semibold pt-10">{t.softskills}</p>
             <div className="lg:w-3/4 pt-4">
