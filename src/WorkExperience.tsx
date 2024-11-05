@@ -126,10 +126,10 @@ export default function WorkExperience() {
 
       <div className="mt-8 w-full">
         <hr></hr>
-        <p className="text-[25px] font-semibold mt-8">
+        <p className="text-[24px] font-semibold mt-8">
           Landeskrankenanstalten-Betriebsgesellschaft - KABEG
         </p>
-        <p className="underline">
+        <p className="underline text-sm">
           <FontAwesomeIcon icon={faLink} />{" "}
           <a href="https://www.kabeg.at" target="_blank" rel="noreferrer">
             kabeg.at
