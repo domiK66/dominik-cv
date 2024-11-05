@@ -60,7 +60,8 @@
     "job32": "Implemented new features and optimized the website for better performance.",
     "job51": "Created a WordPress homepage for the company's representative presentation.",
     "job52": "Developed the product range in the online shop.",
-    "download": "Download CV as PDF"
+    "download": "Download CV as PDF",
+    "civilService": "Civil Service"
   },
   "de": {
     "aboutMe": "Über mich",
@@ -123,6 +124,7 @@
     "job52": "Weiterentwicklung des Produktsortiments im Onlineshop.",
     "download": "Lebenslauf als PDF herunterladen",
     "german": "Deutsch (Muttersprache)",
-    "english": "Englisch (professionelle Kompetenz)"
+    "english": "Englisch (professionelle Kompetenz)",
+    "civilService": "Zivildienst"
   }
 }

@@ -47,7 +47,7 @@ export default function WorkBlock(props: WorkBlockProps) {
       </div>
       <div className="flex justify-between">
         <p className="text-mainColor mt-4 text-sm">{props.subtitle}</p>
-        <p>{props.location}</p>
+        <p className="text-sm mt-4">{props.location}</p>
       </div>
       {props.list && (
         <ul className="list-disc list-outside mt-2 list-mainColor text-sm pl-4">

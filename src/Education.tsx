@@ -63,6 +63,30 @@ export default function Education() {
         <div className="mt-8 w-full">
           <hr></hr>
           <p className="text-[24px] font-semibold mt-8">
+            Rotes Kreuz - Bezirksstelle Wolfsberg
+          </p>
+          <p className="text-mainColor text-sm">
+            Krankenhausstraße 3, 9400 Wolfsberg A
+          </p>
+          <p className="underline text-sm">
+            <FontAwesomeIcon icon={faLink} />{" "}
+            <a
+              href="https://www.roteskreuz.at/kaernten/wolfsberg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              www.roteskreuz.at/kaernten/wolfsberg
+            </a>
+          </p>
+          <EducationBlock
+            title={t.civilService}
+            startDate="Jan 2019"
+            endDate="Sep 2019"
+          />
+        </div>
+        <div className="mt-8 w-full">
+          <hr></hr>
+          <p className="text-[24px] font-semibold mt-8">
             BRG/BORG Wolfsberg (AHS)
           </p>
           <p className="text-mainColor text-sm">
