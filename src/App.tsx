@@ -30,7 +30,7 @@ type Skill = {
 
 function AppContent() {
   const { t } = useTranslation();
-  const [color, setColor] = useState("#00ffff");
+  const [color, setColor] = useState("#00ff00");
 
   useEffect(() => {
     document.documentElement.style.setProperty("--mainColor", color);
@@ -221,7 +221,7 @@ function AppContent() {
           </div>
         </div>
         <div className="lg:flex flex-col-reverse flex lg:flex-row">
-          <div className="lg:w-1/3 pt-32 flex flex-col lg:ml-20">
+          <div className="lg:w-1/3 pt-32 flex flex-col lg:pl-20">
             <h1 className="text-[40px] font-semibold">{t.skills}</h1>
             <p className="text-[24px] font-semibold pt-8">{t.languages}</p>
             <ul className="list-disc list-inside mt-2 list-mainColor">
@@ -229,7 +229,7 @@ function AppContent() {
               <li>English (Professional working proficiency)</li>
             </ul>
             <p className="text-[24px] font-semibold pt-10">{t.softskills}</p>
-            <div className="lg:w-1/2 pt-4">
+            <div className="lg:w-3/4 pt-4">
               {skills.map((skill: Skill, i: number) => (
                 <div key={i} className="mb-4">
                   <label className="block text-lg font-medium">
@@ -250,7 +250,7 @@ function AppContent() {
             <p className="text-[24px] font-semibold pt-10">
               {t.programmingLanguages}
             </p>
-            <div className="lg:w-1/2 pt-4">
+            <div className="w-3/4 pt-4">
               {programmiersprachen.map((skill: Skill, i: number) => (
                 <div key={i} className="mb-4">
                   <label className="block text-lg font-medium">
