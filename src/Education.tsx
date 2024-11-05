@@ -38,6 +38,9 @@ export default function Education() {
             "GitLab CI/CD",
             "Parallel Programming",
             "Figma",
+            "Flask",
+            "UI/UX Design",
+            "Power BI",
           ]}
         />
         <EducationBlock
