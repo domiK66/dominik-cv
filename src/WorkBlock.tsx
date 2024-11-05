@@ -1,43 +1,42 @@
 import {
+  faReact,
   faAngular,
-  faBootstrap,
-  faCss3,
+  faPython,
+  faGitlab,
   faDocker,
   faFigma,
-  faGitlab,
   faGolang,
-  faGoogle,
   faHtml5,
-  faJava,
-  faJenkins,
-  faJs,
-  faLinux,
+  faCss3,
   faMagento,
   faPhp,
-  faPython,
-  faReact,
-  faWindows,
+  faJava,
+  faJenkins,
   faWordpress,
+  faLinux,
+  faBootstrap,
+  faWindows,
+  faJs,
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import { useTranslation } from "./TranslationContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faGlobe,
   faNetworkWired,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-type EducationBlockProps = {
+type WorkBlockProps = {
   title: string;
-  study?: string;
+  subtitle: string;
   startDate: string;
   endDate: string;
+  location: string;
   list?: string[];
   skills?: string[];
 };
 
-export default function EducationBlock(props: EducationBlockProps) {
-  const { t } = useTranslation();
+export default function WorkBlock(props: WorkBlockProps) {
   return (
     <>
       <div className="flex justify-between mt-8">
@@ -46,22 +45,21 @@ export default function EducationBlock(props: EducationBlockProps) {
           {props.startDate} - {props.endDate}
         </p>
       </div>
-      {props.study && (
-        <p className="text-mainColor mt-4 text-sm">
-          {t.study}: {props.study}
-        </p>
-      )}
+      <div className="flex justify-between">
+        <p className="text-mainColor mt-4 text-sm">{props.subtitle}</p>
+        <p>{props.location}</p>
+      </div>
       {props.list && (
         <ul className="list-disc list-outside mt-2 list-mainColor text-sm pl-4">
-          {props.list.map((item, index) => (
+          {props.list?.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
       )}
       {props.skills && (
         <div className="flex flex-wrap mt-4 text-sm">
-          {props.skills.map((skill, index) => (
-            <span
+          {props.skills?.map((skill, index) => (
+            <p
               key={index}
               className="inline-block text-white px-2 py-1 rounded-full m-1 border border-gray-200 text-sm"
             >
@@ -97,8 +95,9 @@ export default function EducationBlock(props: EducationBlockProps) {
               {skill == "Network Administration" && (
                 <FontAwesomeIcon icon={faNetworkWired} />
               )}
+
               {" " + skill}
-            </span>
+            </p>
           ))}
         </div>
       )}

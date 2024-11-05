@@ -65,7 +65,8 @@ function AppContent() {
     { name: "Python", value: 85 },
     { name: "C#", value: 80 },
     { name: "Golang", value: 75 },
-    { name: "Kotlin", value: 65 },
+    { name: "Kotlin, Java & Scala", value: 65 },
+    { name: "PHP", value: 55 },
   ];
 
   return (

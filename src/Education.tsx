@@ -35,7 +35,7 @@ export default function Education() {
             "C#",
             "Kubernetes",
             "Docker",
-            "GitLab",
+            "GitLab CI/CD",
             "Parallel Programming",
             "Figma",
           ]}
@@ -54,6 +54,10 @@ export default function Education() {
             "Kotlin",
             "Kubernetes",
             "DevOps",
+            "Jenkins",
+            "Windows Server",
+            "Linux Server",
+            "Network Administration",
           ]}
         />
         <div className="mt-8 w-full">
