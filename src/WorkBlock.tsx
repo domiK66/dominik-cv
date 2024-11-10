@@ -18,6 +18,7 @@ import {
   faWindows,
   faJs,
   faGoogle,
+  faUnity,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -95,6 +96,7 @@ export default function WorkBlock(props: WorkBlockProps) {
               {skill == "Network Administration" && (
                 <FontAwesomeIcon icon={faNetworkWired} />
               )}
+              {skill == "Unity" && <FontAwesomeIcon icon={faUnity} />}
 
               {" " + skill}
             </p>

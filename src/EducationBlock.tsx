@@ -16,6 +16,7 @@ import {
   faPhp,
   faPython,
   faReact,
+  faUnity,
   faWindows,
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
@@ -97,6 +98,8 @@ export default function EducationBlock(props: EducationBlockProps) {
               {skill == "Network Administration" && (
                 <FontAwesomeIcon icon={faNetworkWired} />
               )}
+              {skill == "Unity" && <FontAwesomeIcon icon={faUnity} />}
+        
               {" " + skill}
             </span>
           ))}

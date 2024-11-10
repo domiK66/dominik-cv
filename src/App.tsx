@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import img from "/img.png";
+import img from "/img.jpg";
 
 import { TranslationProvider, useTranslation } from "./TranslationContext";
 
@@ -89,7 +89,7 @@ function AppContent() {
         }}
       >
         <button
-          onClick={() => setColor("#ff0000")} // Red
+          onClick={() => setColor("#ff0000")}
           className={`border border-transparent hover:border-mainColor box-border hover:underline p-1 ${
             color === "#ff0000" ? "bg-mainColor text-black" : ""
           }`}
@@ -97,7 +97,7 @@ function AppContent() {
           R
         </button>
         <button
-          onClick={() => setColor("#00ff00")} // Green
+          onClick={() => setColor("#00ff00")}
           className={`border border-transparent hover:border-mainColor box-border hover:underline p-1 ${
             color === "#00ff00" ? "bg-mainColor text-black" : ""
           }`}
@@ -105,7 +105,7 @@ function AppContent() {
           G
         </button>
         <button
-          onClick={() => setColor("#0000ff")} // Blue
+          onClick={() => setColor("#0000ff")}
           className={`border border-transparent hover:border-mainColor box-border hover:underline p-1 ${
             color === "#0000ff" ? "bg-mainColor text-black" : ""
           }`}
@@ -113,7 +113,7 @@ function AppContent() {
           B
         </button>
         <button
-          onClick={() => setColor("#00ffff")} // Cyan
+          onClick={() => setColor("#00ffff")}
           className={`border border-transparent hover:border-mainColor box-border hover:underline p-1 ${
             color === "#00ffff" ? "bg-mainColor text-black" : ""
           }`}
@@ -121,7 +121,7 @@ function AppContent() {
           C
         </button>
         <button
-          onClick={() => setColor("#ff00ff")} // Magenta
+          onClick={() => setColor("#ff00ff")}
           className={`border border-transparent hover:border-mainColor box-border hover:underline p-1 ${
             color === "#ff00ff" ? "bg-mainColor text-black" : ""
           }`}
@@ -129,7 +129,7 @@ function AppContent() {
           M
         </button>
         <button
-          onClick={() => setColor("#ffff00")} // Yellow
+          onClick={() => setColor("#ffff00")}
           className={`border border-transparent hover:border-mainColor box-border hover:underline p-1 ${
             color === "#ffff00" ? "bg-mainColor text-black" : ""
           }`}

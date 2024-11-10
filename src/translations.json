@@ -105,8 +105,7 @@
     "adaptability": "Anpassungsfähigkeit",
     "programmingLanguages": "Programmiersprachen",
     "frameworks": "Frameworks",
-    "job11": "Entwicklung einer Applikation zur Visualisierung von Kundentrainingsdaten auf einem Dashboard für eine Gehirntraining-App.",
-    "job12": "Implementierung eines neuen Features, das es Benutzern ermöglicht, ihren Fortschritt in Echtzeit zu verfolgen.",
+
     "onsite": "Vor Ort",
     "wolfsberg": "Wolfsberg, Kärnten",
     "graz": "Graz, Steiermark",
@@ -114,6 +113,12 @@
     "ferialpraktikum": "Ferialpraktikum",
     "fulltime": "Vollzeit",
     "parttime": "Teilzeit",
+    "download": "Lebenslauf als PDF herunterladen",
+    "german": "Deutsch (Muttersprache)",
+    "english": "Englisch (professionelle Kompetenz)",
+    "civilService": "Zivildienst",
+    "job11": "Entwicklung einer Applikation zur Visualisierung von Kundentrainingsdaten auf einem Dashboard für eine Gehirntraining-App.",
+    "job12": "Implementierung eines neuen Features, das es Benutzern ermöglicht, ihren Fortschritt in Echtzeit zu verfolgen.",
     "job41": "Entwickelung einer neue eCommerce-Plattform durch Migration und Anreicherung von Daten aus dem veralteten System, welchem essenzielle Funktionen fehlten.",
     "job42": "Erstellung und Verwaltung von Produktlisten mit detaillierten Beschreibungen, Preisen, Kategorien und Attributen.",
     "job21": "Einblicke in die IT-Infrastruktur eines Konzerns gewonnen.",
@@ -121,10 +126,6 @@
     "job31": "Weiterentwicklung der Erscheinung des Onlineshops; Navigation und Inhalte verbessert und erweitert.",
     "job32": "Neue Funktionen implementiert und die Website für eine bessere Leistung optimiert.",
     "job51": "Erstellung einer WordPress-Homepage zur repräsentativen Präsentation des Unternehmens.",
-    "job52": "Weiterentwicklung des Produktsortiments im Onlineshop.",
-    "download": "Lebenslauf als PDF herunterladen",
-    "german": "Deutsch (Muttersprache)",
-    "english": "Englisch (professionelle Kompetenz)",
-    "civilService": "Zivildienst"
+    "job52": "Weiterentwicklung des Produktsortiments im Onlineshop."
   }
 }
